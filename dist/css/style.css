@@ -1,0 +1,33 @@
+html {
+  background-color: #0099F0;
+}
+
+html body {
+  padding: 0px;
+  margin: 3em;
+}
+
+html body h1 {
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+  box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+}
+
+html body #viewDiv {
+  height: 90%;
+  width: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+  box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+}
+
+html body #loc {
+  padding-right: 1em;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+  box-shadow: 10px 10px 10px 10px rgba(233, 127, 127, 0.822);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+@import "includes/_colors";
+// @import "includes/_variables";
+@mixin box-shadow($top, $left, $blur, $size, $color) {
+  -webkit-box-shadow: $top $left $blur $size $color;
+  -moz-box-shadow: $top $left $blur $size $color;
+  box-shadow: $top $left $blur $size $color;
+}
+@mixin cursorshape($shape: 1) {
+  @if $shape==1 {
+    cursor: crosshair;
+    //color: $light-text;
+  } @else if $shape==2{
+    cursor: wait;
+    //color: $light-text;
+  }@else if $shape==3{
+    cursor: pointer;
+    //color: $light-text;
+  }
+}
+html{
+    background-color:$blue ;
+    
+    body{
+        padding: 0px;
+        margin: 3em; 
+        
+       h1{
+        font-family: Arial;   
+        font-size: 24px;
+        text-align: center;
+        color: $white;
+        @include box-shadow(10px,10px,10px,10px, rgba(233, 127, 127, 0.822));
+       }
+      
+     #viewDiv{
+        height: 90%;
+        width: 100%;
+        @include cursorshape(3);
+        @include box-shadow(10px,10px,10px,10px, rgba(233, 127, 127, 0.822));
+    }
+    #loc{
+      padding-right:1em;
+      @include cursorshape(3);
+      @include box-shadow(10px,10px,10px,10px, rgba(233, 127, 127, 0.822));
+    }
+  } 
+};
+
